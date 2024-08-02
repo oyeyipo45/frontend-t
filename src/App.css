@@ -1,0 +1,32 @@
+.editButton {
+  width: 40px;
+  height: 20px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.post {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.postInput {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
