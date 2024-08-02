@@ -1,6 +1,7 @@
 import './App.css'
 import Posts from './component/List'
 import { useState } from "react";
+import { useGetPostsQuery } from './redux/api';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
 
   const [filter, setFilter] = useState<string>("all");
 
+  const { data: posts, isLoading } = useGetPostsQuery(filter, { refetchOnMountOrArgChange: true });
 
   return (
     <>
