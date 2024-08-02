@@ -13,6 +13,8 @@
   API_URL=http://localhost:9090/api/v1
   ```
 
+* Before starting the application in development mode make sure to confirm the backend is running on PORT=9090.
+
 
 * Start the application in development mode.
   ```
