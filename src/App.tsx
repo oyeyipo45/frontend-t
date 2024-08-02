@@ -1,10 +1,10 @@
-import './App.css'
-import Posts from './component/List'
+import "./App.css";
+import Posts from "./component/List";
 import { useState } from "react";
-import { useGetPostsQuery } from './redux/api';
+import { useGetPostsQuery } from "./redux/api";
+import PostInput from "./component/Input";
 
 function App() {
-
   const options: Array<{ value: string; label: string }> = [
     { value: "all", label: "all" },
     { value: "false", label: "false" },
@@ -23,6 +23,7 @@ function App() {
           {isLoading && <span>Loading....</span>}
           {posts && (
             <>
+              <PostInput />
               <div className="filter">
                 <p>Filter Posts</p>
                 <select value={filter} onChange={(e) => setFilter(e.target.value)}>
@@ -42,4 +43,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
